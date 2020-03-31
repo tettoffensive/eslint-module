@@ -2,7 +2,10 @@
   "name": "@tettoffensive/eslint-module",
   "version": "1.1.0",
   "description": "ESLint module for Nuxt.js",
-  "repository": "nuxt-community/eslint-module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tettoffensive/eslint-module.git"
+  },
   "license": "MIT",
   "contributors": [
     "Ricardo Gobbo de Souza <ricardogobbosouza@yahoo.com.br>"
@@ -38,5 +41,14 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/tettoffensive/eslint-module/issues"
+  },
+  "homepage": "https://github.com/tettoffensive/eslint-module#readme",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "author": "Stuart Tett"
 }
