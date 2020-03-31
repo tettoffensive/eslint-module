@@ -1,9 +1,10 @@
 module.exports = {
   rootDir: __dirname,
   render: {
-    resourceHints: false
+    resourceHints: false,
   },
   buildModules: [
-    { handler: require('../../') }
-  ]
-}
+    // eslint-disable-next-line global-require
+    { handler: require('../..') },
+  ],
+};

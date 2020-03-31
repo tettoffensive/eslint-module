@@ -1,36 +1,36 @@
-const { init, loadConfig } = require('@nuxtjs/module-test-utils')
+const { init, loadConfig } = require('@nuxtjs/module-test-utils');
 
-const { moduleExists } = require('../lib/utils')
-const logger = require('../lib/logger')
+const { moduleExists } = require('../lib/utils');
+const logger = require('../lib/logger');
 
-logger.mockTypes(() => jest.fn())
+logger.mockTypes(() => jest.fn());
 
 jest.mock('../lib/utils', () => ({
-  moduleExists: jest.fn()
-}))
+  moduleExists: jest.fn(),
+}));
 
 describe('warn', () => {
-  let nuxt
+  let nuxt;
 
   beforeAll(async () => {
-    moduleExists.mockImplementation(() => false)
-    nuxt = await init(loadConfig(__dirname))
-  }, 60000)
+    moduleExists.mockImplementation(() => false);
+    nuxt = await init(loadConfig(__dirname));
+  }, 60000);
 
   beforeEach(() => {
-    logger.clear()
-  })
+    logger.clear();
+  });
 
   afterAll(async () => {
-    await nuxt.close()
-  })
+    await nuxt.close();
+  });
 
   test('should warn if not found the `eslint` dependency', () => {
-    expect(moduleExists).toBeCalledWith('eslint')
-    expect(moduleExists).toHaveReturnedWith(false)
+    expect(moduleExists).toBeCalledWith('eslint');
+    expect(moduleExists).toHaveReturnedWith(false);
     expect(logger.warn).toHaveBeenCalledWith(
       'The dependency `eslint` not found.',
-      'Please run `yarn add eslint --dev` or `npm install eslint --save-dev`'
-    )
-  })
-})
+      'Please run `yarn add eslint --dev` or `npm install eslint --save-dev`',
+    );
+  });
+});
