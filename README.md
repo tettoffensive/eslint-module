@@ -1,4 +1,4 @@
-# @nuxtjs/eslint-module
+# @tettoffensive/eslint-module
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
@@ -20,22 +20,22 @@ yarn add --dev eslint # or npm install --save-dev eslint
 
 ## Setup
 
-1. Add `@nuxtjs/eslint-module` dependency to your project
+1. Add `@tettoffensive/eslint-module` dependency to your project
 
 ```bash
-yarn add --dev @nuxtjs/eslint-module # or npm install --save-dev @nuxtjs/eslint-module
+yarn add --dev @tettoffensive/eslint-module # or npm install --save-dev @tettoffensive/eslint-module
 ```
 
-2. Add `@nuxtjs/eslint-module` to the `buildModules` section of `nuxt.config.js`
+2. Add `@tettoffensive/eslint-module` to the `buildModules` section of `nuxt.config.js`
 
 ```js
 export default {
   buildModules: [
     // Simple usage
-    '@nuxtjs/eslint-module',
+    '@tettoffensive/eslint-module',
 
     // With options
-    ['@nuxtjs/eslint-module', { /* module options */ }]
+    ['@tettoffensive/eslint-module', { /* module options */ }]
   ]
 }
 ```
@@ -47,7 +47,7 @@ export default {
 ```js
 export default {
   buildModules: [
-    '@nuxtjs/eslint-module'
+    '@tettoffensive/eslint-module'
   ],
   eslint: {
     /* module options */
@@ -163,11 +163,11 @@ The `filePath` is an absolute path or relative to the webpack config: `output.pa
 Copyright (c) Nuxt Community
 
 <!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/v/@nuxtjs/eslint-module/latest.svg?style=flat-square
-[npm-version-href]: https://npmjs.com/package/@nuxtjs/eslint-module
+[npm-version-src]: https://img.shields.io/npm/v/@tettoffensive/eslint-module/latest.svg?style=flat-square
+[npm-version-href]: https://npmjs.com/package/@tettoffensive/eslint-module
 
-[npm-downloads-src]: https://img.shields.io/npm/dt/@nuxtjs/eslint-module.svg?style=flat-square
-[npm-downloads-href]: https://npmjs.com/package/@nuxtjs/eslint-module
+[npm-downloads-src]: https://img.shields.io/npm/dt/@tettoffensive/eslint-module.svg?style=flat-square
+[npm-downloads-href]: https://npmjs.com/package/@tettoffensive/eslint-module
 
 [circle-ci-src]: https://img.shields.io/circleci/project/github/nuxt-community/eslint-module.svg?style=flat-square
 [circle-ci-href]: https://circleci.com/gh/nuxt-community/eslint-module
@@ -175,5 +175,5 @@ Copyright (c) Nuxt Community
 [codecov-src]: https://img.shields.io/codecov/c/github/nuxt-community/eslint-module.svg?style=flat-square
 [codecov-href]: https://codecov.io/gh/nuxt-community/eslint-module
 
-[license-src]: https://img.shields.io/npm/l/@nuxtjs/eslint-module.svg?style=flat-square
-[license-href]: https://npmjs.com/package/@nuxtjs/eslint-module
+[license-src]: https://img.shields.io/npm/l/@tettoffensive/eslint-module.svg?style=flat-square
+[license-href]: https://npmjs.com/package/@tettoffensive/eslint-module
