@@ -24,7 +24,7 @@
   "devDependencies": {
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
-    "@nuxtjs/eslint-config": "https://github.com/tettoffensive/eslint-config",
+    "@nuxtjs/eslint-config": "https://github.com/tettoffensive/eslint-config#tusk",
     "@nuxtjs/module-test-utils": "latest",
     "codecov": "latest",
     "eslint": "latest",
